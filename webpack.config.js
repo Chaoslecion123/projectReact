@@ -6,7 +6,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/',
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -37,9 +38,24 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
-            }
+            },
+            {
+                test: /\.(png|gif|jpg)$/,
+                use: [
+                    {
+                        'loader': 'file-loader',
+                        options: {
+                            name: 'assets/[hash].[ext]'
+                        }
+                    }
+                ]
+            },
         ]
 
+    },
+    devtool: false,
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         new HtmlWebPackPlugin({
@@ -48,7 +64,8 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'assets/[name].css'
-        })
+        }),
+
 
     ]
 };

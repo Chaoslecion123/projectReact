@@ -1,5 +1,19 @@
+npm init -y
+npm react react-dom
 npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
 npm install webpack webpack-cli html-webpack-plugin html-loader --save-dev
 npm install webpack-dev-server --save-dev
 npm install mini-css-extract-plugin css-loader node-sass sass-loader --save-dev
 npm install eslint babel-eslint eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+npm install file-loader --save-dev
+npm install json-server -g
+npm install prop-types
+npm install react-router-dom --save
+npm install redux react-redux --save
+npm install md5 --save
+
+
+*** Redux
+// 1 - import connect -- nuestro componente ya esta connectado con redux
+// 2 - actions
+// 3 - reducers
