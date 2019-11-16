@@ -4,7 +4,7 @@ const useInitialState = (API) => {
     const [videos, setVideos] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/initalState')
+        fetch(API)
             .then(response => response.json())
             .then(data => setVideos(data));
     }, []);

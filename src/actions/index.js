@@ -1,3 +1,4 @@
+/* payload es la informacion que lo vamos a trasmitir */
 export const setFavorite = payload => ({
     type: 'SET_FAVORITE',
     payload,

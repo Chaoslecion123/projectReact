@@ -19,8 +19,6 @@ const App = () => (
 
             </Switch>
         </Layout>
-
-
     </BrowserRouter>
 )
 

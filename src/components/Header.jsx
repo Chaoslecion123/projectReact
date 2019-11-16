@@ -20,7 +20,7 @@ const Header = props => {
     return (
         <header className="header">
             <Link to="/">
-                <img className="header__img" src={logo} alt="Platzi Video" />
+                <img className="header__img" src={logo} alt="Fernando Video" />
             </Link>
             <div className="header__menu">
                 <div className="header__menu--profile">

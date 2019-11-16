@@ -4,8 +4,6 @@ import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-
-
 import '../assets/styles/App.scss';
 
 
@@ -60,5 +58,5 @@ const mapStateToProps = state => {
         originals: state.originals,
     };
 };
-//export default connect(props, dispatch)(Home)
+//export default connect(props, actions)(Home)
 export default connect(mapStateToProps, null)(Home)

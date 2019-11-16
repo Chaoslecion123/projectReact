@@ -9,7 +9,8 @@ import twitterIcon from '../assets/static/twitter-icon.png';
 const Login = (props) => {
     const [form, setValues] = useState({
         email: '',
-    });
+    }); /* useState recibe como propiedad elementes para inicializar
+        el estado como string ,bool arreglo,objecto*/
     const handleInput = event => {
         setValues({
             ...form,
